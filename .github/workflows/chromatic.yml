@@ -6,8 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - run: |
-          yarn && yarn build
+      - run: yarn
       - uses: chromaui/action@v1
         with:
           projectToken: 1t2gbwk0xqd
